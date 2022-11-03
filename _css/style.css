@@ -8,6 +8,10 @@ body{
     height: 40em;
 }
 
+#main-content a{
+    text-decoration: none;
+}
+
 
 main section#categorias li:hover{
     -webkit-transform: scale(1.3);
