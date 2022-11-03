@@ -8,6 +8,12 @@ $(document).ready(() => {
         getPagina("_html/login.html", 'main');
     });
 
+    // Pagina Terror
+    $("#terror-btn").click((e) => {
+        $('#destaque').hide();
+        getPagina("_html/terror.html", 'main');
+    });
+
     // Modal
     $(".btn-login").click((e) => {
         $("#modal-login").modal("toggle"); //abre modal login
