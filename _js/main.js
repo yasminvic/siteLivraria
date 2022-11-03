@@ -8,6 +8,21 @@ $(document).ready(() => {
         getPagina("_html/login.html", 'main');
     });
 
+    $("#btn-romance").click((e) => {
+        $('#destaque').hide();
+        getPagina("_html/romance.html", 'main');
+    });
+
+    $("#btn-terror").click((e) => {
+        $('#destaque').hide();
+        getPagina("_html/terror.html", 'main');
+    });
+
+    $("#btn-culinaria").click((e) => {
+        $('#destaque').hide();
+        getPagina("_html/culinaria.html", 'main');
+    });
+
     //Pagina Resenhas
     $("#btn-resenha").click((e) => {
         $('#destaque').hide();
@@ -18,6 +33,8 @@ $(document).ready(() => {
     $(".btn-login").click((e) => {
         $("#modal-login").modal("toggle"); //abre modal login
     });
+
+
 
     $('.btn-cadastro').click((e)=>{
         $('#modal-cadastro').modal("toggle");
@@ -64,6 +81,9 @@ var getPagina = (page, target) => {
         }
     })
 };
+
+
+
 
 var VerificarLogin = () =>{
     let nome = $('#nome-cadastro-input').val();
