@@ -12,6 +12,6 @@ const setItem = (key, value) =>{
 }
 
 const setJsonItem = (key, value) =>{
-    var obj = JSON.stringify(value); //transforma do tipo Json em string
-    setItem(key, value); //chama função que setta isso
+    var obj = JSON.stringify(value);   // Transforma do tipo Json em string
+    setItem(key, obj);                 // Chama função que setta isso
 }
