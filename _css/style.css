@@ -45,11 +45,6 @@ main section#conteudo .item-card:hover{
     transform: scale(1.1);
 }
 
-.card-autor {
-    font: 300;
-    font-size: 14px;
-}
-
 footer{
     width: 100%;
     background-color: #6b737a;
@@ -59,4 +54,15 @@ footer{
 footer img{
     width: 32px;
     height: 32px;
+}
+
+/* Terror */
+.card-autor {
+    font: 300;
+    font-size: 14px;
+}
+
+#terror-btn {
+    text-decoration: none;
+    color: #000;
 }
