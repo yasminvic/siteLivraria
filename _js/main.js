@@ -8,6 +8,13 @@ $(document).ready(() => {
         getPagina("_html/login.html", 'main');
     });
 
+
+    // Pagina Terror
+    $("#terror-btn").click((e) => {
+        $('#destaque').hide();
+        getPagina("_html/terror.html", 'main');
+    });
+    
     //Pagina Resenhas
     $("#btn-resenha").click((e) => {
         $('#destaque').hide();

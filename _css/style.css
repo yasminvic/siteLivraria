@@ -55,3 +55,14 @@ footer img{
     width: 32px;
     height: 32px;
 }
+
+/* Terror */
+.card-autor {
+    font: 300;
+    font-size: 14px;
+}
+
+#terror-btn {
+    text-decoration: none;
+    color: #000;
+}
