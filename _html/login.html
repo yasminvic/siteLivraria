@@ -1,0 +1,99 @@
+<head>
+    <link rel="stylesheet" href="../_css/login.css">
+</head>
+
+    <main id="main-login">
+        <div class="scene">
+            <div class="container text-center mb-4">
+                <div class="">
+                    <h1>Faça seu login</h1>
+                    <p>Faça seu login ou cadastre-se para salvar seus filmes.</p>
+                </div>
+                <div class="">
+                    <button type="button" class="btn-login btn btn-primary">Login</button>
+                    <button type="button" class="btn-cadastro btn btn-warning">Cadastrar</button>
+                </div>
+            </div>
+            <div class="rocket">
+                <img src="../_img/rocket.png" alt="Rocket">
+            </div>
+        </div>
+    </main>
+
+    <div id="modal-container">
+        <!-- Modal login -->
+        <div id="modal-login" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                        <button type="button" class="bclose close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="form-login" class="bg-white text-black-50 p-4">
+                            <div class="form-group mb-2">
+                                <label for="email-login-input">Email</label>
+                                <input type="email" class="form-control" id="email-login-input"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="senha-login-input">Senha</label>
+                                <input type="password" class="form-control" id="senha-login-input">
+                            </div>
+                            
+                        </form>
+                    </div>
+                    <div id="modal-footer" class="modal-footer">
+                        <button type="button" class="bclose btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" id="btn-logar" class="btn btn-primary">Logar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal cadastro -->
+        <div id="modal-cadastro" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cadastro</h5>
+                        <button type="button" class="bclose close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="form-cadastro" class="bg-white text-black-50 p-4">
+                            <div class="form-group mb-2">
+                                <label for="nome-cadastro-input">Nome</label>
+                                <input type="text" class="form-control" id="nome-cadastro-input"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="email-cadastro-input">Email</label>
+                                <input type="email" class="form-control" id="email-cadastro-input"
+                                    aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group mb-2">
+                                <label for="password-cadastro-input">Senha</label>
+                                <input type="password" class="form-control" id="senha-cadastro-input">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="bclose btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="button" id="btn-cadastrar" class="btn btn-primary">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--Scripts-->
+<script src="../_js/user.js"></script>
+<script src="../_js/storage.js"></script>
+<script src="../_js/main.js"></script>
+<script src="../_js/rocket.js"></script>
+
+
