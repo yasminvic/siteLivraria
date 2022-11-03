@@ -2,10 +2,16 @@ var lista_usuarios = [];
 
 $(document).ready(() => {
 
-    // Index
+    // Página Login
     $("#index-btn-login").click((e) => {
         $('#destaque').hide();
         getPagina("_html/login.html", 'main');
+    });
+
+    //Pagina Resenhas
+    $("#btn-resenha").click((e) => {
+        $('#destaque').hide();
+        getPagina("_html/resenha.html", 'main');
     });
 
     // Modal
