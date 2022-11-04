@@ -13,7 +13,6 @@ $(document).ready(() => {
     getPagina("_html/resenha.html", "main");
   });
 
-<<<<<<< HEAD
   //Pagina About Us
   $("#btn-about").click((e) => {
     $("#destaque").hide();
@@ -57,8 +56,7 @@ $(document).ready(() => {
       let email = $("#email-cadastro-input").val();
 
       user = new Usuario(idInsert, nome, senha, email);
-=======
-<<<<<<< HEAD
+
     $("#btn-romance").click((e) => {
         $('#destaque').hide();
         getPagina("_html/romance.html", 'main');
@@ -74,15 +72,12 @@ $(document).ready(() => {
         getPagina("_html/culinaria.html", 'main');
     });
 
-=======
-
     // Pagina Terror
     $("#terror-btn").click((e) => {
         $('#destaque').hide();
         getPagina("_html/terror.html", 'main');
     });
     
->>>>>>> b4d837ed3ba3a9195b1930b49fe58214b57de353
     //Pagina Resenhas
     $("#btn-resenha").click((e) => {
         $('#destaque').hide();
@@ -94,13 +89,7 @@ $(document).ready(() => {
         $("#modal-login").modal("toggle"); // Abre modal login
     });
 
-<<<<<<< HEAD
-
-
-    $('.btn-cadastro').click((e)=>{
-=======
     $('.btn-cadastro').click((e) => {
->>>>>>> b4d837ed3ba3a9195b1930b49fe58214b57de353
         $('#modal-cadastro').modal("toggle");
     });
 
@@ -160,7 +149,6 @@ $(document).ready(() => {
             });
         }
     });
->>>>>>> 073ad0085988717e49ac929afc96f2188b90a87d
 
       lista_usuarios.push(user);
       setJsonItem(LISTA_USUARIOS, lista_usuarios);
@@ -168,7 +156,6 @@ $(document).ready(() => {
   });
 });
 
-<<<<<<< HEAD
 //FUNCTIONS
 var getPagina = (page, target) => {
   $.ajax({
@@ -202,7 +189,6 @@ var VerificaEmail = (email) => {
     return false;
   }
 };
-=======
 
 //FUNCTIONS
 var getPagina = (page, target) => {
@@ -215,14 +201,8 @@ var getPagina = (page, target) => {
     })
 };
 
-<<<<<<< HEAD
 
-
-
-var VerificarLogin = () =>{
-=======
 var VerificarLogin = () => {
->>>>>>> b4d837ed3ba3a9195b1930b49fe58214b57de353
     let nome = $('#nome-cadastro-input').val();
     let email = $('#email-cadastro-input').val();
     let senha = $('#senha-cadastro-input').val();
@@ -242,5 +222,4 @@ var VerificaEmail = (email) => {
     } else {
         return false;
     }
-}
->>>>>>> 073ad0085988717e49ac929afc96f2188b90a87d
+};
