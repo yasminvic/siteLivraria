@@ -30,6 +30,12 @@ $(document).ready(() => {
     getPagina("_html/romance.html", 'main');
 });
 
+$("#btn-scifi").click((e) => {
+  $('#destaque').hide();
+  getPagina("_html/scifi.html", 'main');
+});
+
+
 $("#btn-culinaria").click((e) => {
     $('#destaque').hide();
     getPagina("_html/culinaria.html", 'main');
