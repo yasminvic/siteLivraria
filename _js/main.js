@@ -26,22 +26,20 @@ $(document).ready(() => {
     getPagina("_html/terror.html", "main");
   });
 
+  // Página Romance
   $("#btn-romance").click((e) => {
     $('#destaque').hide();
     getPagina("_html/romance.html", 'main');
   });
 
-<<<<<<< HEAD
+  // Página scifi
+  $("#btn-scifi").click((e) => {
+    $('#destaque').hide();
+    getPagina("_html/scifi.html", 'main');
+  });
+
+  // Página culinária
   $("#btn-culinaria").click((e) => {
-=======
-$("#btn-scifi").click((e) => {
-  $('#destaque').hide();
-  getPagina("_html/scifi.html", 'main');
-});
-
-
-$("#btn-culinaria").click((e) => {
->>>>>>> 5c788c84ace317c5dba77adf4fc5b996a78a1d79
     $('#destaque').hide();
     getPagina("_html/culinaria.html", 'main');
   });
