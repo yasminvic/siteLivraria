@@ -31,7 +31,17 @@ $(document).ready(() => {
     getPagina("_html/romance.html", 'main');
   });
 
+<<<<<<< HEAD
   $("#btn-culinaria").click((e) => {
+=======
+$("#btn-scifi").click((e) => {
+  $('#destaque').hide();
+  getPagina("_html/scifi.html", 'main');
+});
+
+
+$("#btn-culinaria").click((e) => {
+>>>>>>> 5c788c84ace317c5dba77adf4fc5b996a78a1d79
     $('#destaque').hide();
     getPagina("_html/culinaria.html", 'main');
   });
