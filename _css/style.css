@@ -3,13 +3,25 @@
 body{
     overflow-x: hidden;
 }
+/* Nav Bar*/
+.nav-item a {
+    color: rgb(214, 214, 214);
+}
+
+.nav-item a:hover {
+    color: rgb(143, 143, 143);
+}
+
+.navbar-brand {
+    color: rgb(214, 214, 214);
+}
+
+.navbar-brand:hover {
+    color: rgb(143, 143, 143);
+}
 
 #destaque img{
     height: 40em;
-}
-
-#main-content a{
-    text-decoration: none;
 }
 
 
@@ -59,3 +71,40 @@ footer img{
     width: 32px;
     height: 32px;
 }
+
+
+/* About Us */
+#about-main {
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 60vw;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+#a-about {
+    text-decoration: none;
+}
+
+.card {
+    margin: 2em;
+}
+
+
+/* Terror */
+.card-autor {
+    font: 300;
+    font-size: 14px;
+}
+
+#terror-btn {
+    text-decoration: none;
+    color: #000;
+}
+

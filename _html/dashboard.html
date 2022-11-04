@@ -1,0 +1,45 @@
+<head>
+    <link rel="stylesheet" href="../_css/style.css" />
+</head>
+
+<section class="container d-flex justify-content-center my-4 p-4 rounded bg-dark text-white">
+    <fieldset class="col-6">
+        <legend>
+            Formulário de Resenha
+        </legend>
+        <div class="form-group">
+            <label for="titulo">Título</label>
+            <input type="text" name="titulo" id="input-titulo" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="genero">Gênero</label>
+            <input type="text" name="genero" id="input-genero" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="nota">Nota: <span id="nota"></span></label>
+            <input type="range" name="nota" id="input-nota" class="form-range" min="0" max="10">
+        </div>
+        <div class="input-group">
+            <span class="input-group-text">Descrição</span>
+            <textarea class="form-control" id="input-descricao" aria-label="With textarea"></textarea>
+        </div>
+        </div>
+        <button type="button" id="btn-enviar" class="btn btn-primary">Enviar</button>
+    </fieldset>
+</section>
+
+<section class="container">
+    <table class="table table-striped">
+        <thead>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Nota</th>
+            <th>Descrição</th>
+            <th>Ações</th>
+        </thead>
+        <tbody id="lista-filmes">
+
+        </tbody>
+    </table>
+</section>

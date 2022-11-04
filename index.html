@@ -28,13 +28,16 @@
                 <a class="nav-link active" id="btn-resenha" aria-current="page" href="#">Resenhas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">About</a>
+                <a class="nav-link active" id="btn-dashboard" aria-current="page" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="btn-about" aria-current="page" href="#">About Us</a>
               </li>
             </ul>
+          </div>
           <div class="text-end">
-              <button type="button" id="index-btn-login" class="btn btn-warning">Login</button>
-          </div>
-          </div>
+            <button type="button" id="index-btn-login" class="btn btn-warning">Login</button>
+        </div>
         </div>
       </nav>
       <div id="destaque">
@@ -65,21 +68,27 @@
             </button>
           </div>
     </div>
+
+ 
     <main id="main-content">
+
+      <!-- Categorias -->
         <section id="categorias">
             <ul class="list-group list-group-horizontal mt-5 te">
                 <li class="list-group-item border-0 mx-auto">
-                    <a href="#" class="text-reset">
+                    <a id="btn-romance" href="#" class="text-reset">
                         <figure>
                             <img src="../_img/romance.png" class="p-2">
                             <figcaption>
                                 <h3>Romance</h3>
                             </figcaption>
+
                         </figure>
                     </a>
                 </li>
                 <li class="list-group-item border-0 mx-auto text-center">
-                    <a href="#" class="text-reset">
+                    <a id="btn-terror" href="#" class="text-reset">
+                    <a href="#" id="terror-btn">
                         <figure>
                             <img src="../_img/terror.png" class="p-2">
                             <figcaption>
@@ -89,7 +98,7 @@
                     </a>
                 </li>
                 <li class="list-group-item border-0 mx-auto" >
-                    <a href="#" class="text-reset">
+                    <a id="btn-culinaria" href="#" class="text-reset">
                         <figure>
                             <img src="../_img/culinaria.png" class="p-2">
                             <figcaption>
@@ -99,7 +108,9 @@
                     </a>
                 </li>
                 <li class="list-group-item border-0 mx-auto">
-                    <a href="#" class="text-reset">
+
+                    <a href="#" id="btn-scifi" class="text-reset">
+                    <a id="btn-scifi" href="#" class="text-reset">
                         <figure>
                             <img src="../_img/sci-fi.png" class="p-2">
                             <figcaption>
@@ -110,16 +121,18 @@
                 </li>
             </ul>
         </section>
+
+           <!--Lista principal livros recomendados  -->
         <section id="conteudo" class="m-5 mx-auto">
             <h2 class="text-center">Livros Recomendados</h2>
             <div class="card mb-3 mx-auto mt-5 border-dark item-card" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="_img/livro1.jpg" class="img-fluid rounded-start" alt="Livro É Assim que Acaba">
+                  <img src="../_img/Culinaria/Basico.jpg" class="img-fluid rounded-start" alt="Livro É Assim que Acaba">
                 </div>
                 <div class="col-md-8 mt-5">
                   <div class="card-body">
-                    <h5 class="card-title">É Assim que Acaba</h5>
+                    <h5 class="card-title">Basico</h5>
                     <p class="card-text">R$ 34,89</p>
                   </div>
                 </div>
@@ -128,11 +141,11 @@
             <div class="card mb-3 mx-auto mt-5 border-dark item-card" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="_img/livro2.jpg" class="img-fluid rounded-start" alt="Livro Amor e Gelato">
+                  <img src="../_img/terror/livro-terror2.jpg" class="img-fluid rounded-start" alt="Livro Amor e Gelato">
                 </div>
                 <div class="col-md-8 mt-5">
                   <div class="card-body">
-                    <h5 class="card-title">Amor e Gelato</h5>
+                    <h5 class="card-title">Cuthulu</h5>
                     <p class="card-text">R$ 36,20</p>
                   </div>
                 </div>
@@ -141,11 +154,11 @@
             <div class="card mb-3 mx-auto mt-5 border-dark item-card" style="max-width: 540px;">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="_img/livro3.jpg" class="img-fluid rounded-start" alt="Livro Homem de Giz">
+                  <img src="../_img/Sci-fi/duna.jpg" class="img-fluid rounded-start" alt="Livro Homem de Giz">
                 </div>
                 <div class="col-md-8 mt-5">
                   <div class="card-body">
-                    <h5 class="card-title">Homem de Giz</h5>
+                    <h5 class="card-title">duna</h5>
                     <p class="card-text">R$ 51,89</p>
                   </div>
                 </div>
@@ -235,6 +248,8 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <script src="../_js/main.js"></script>
+    <script src="_js/livros.js"></script>
+    <script src="_js/user.js"></script>
+    <script src="_js/main.js"></script>
 </body>
 </html>

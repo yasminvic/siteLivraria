@@ -11,17 +11,13 @@ const getJsonItem = (key) => {
     return JSON.parse(obj);
 }
 
-const setJsonItem = (key, value) => {
-    var obj = JSON.stringify(value);
-    setItem(key, obj);
-}
-
 const removeItem = (key) => {
     localStorage.removeItem(key);
 }
 
-const getListaFilmes = (key) => {
-    return getJsonItem(key).listaFilmes;
+const setJsonItem = (key, value) =>{
+    var obj = JSON.stringify(value); //transforma do tipo Json em string
+    setItem(key, value); //chama função que setta isso
 }
 
 const updateUsuarios = (key, usuario) => {
