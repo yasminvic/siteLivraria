@@ -59,6 +59,21 @@ var getPagina = (page, target) => {
     })
 };
 
+function selecionarCategoria(categoria)
+{
+        if(document.getElementById(categoria).hidden)
+        {
+            document.getElementById('divLivrosRecomendados').hidden = true
+            document.getElementById(categoria).hidden = false
+        }
+        else    
+        {
+            document.getElementById('divLivrosRecomendados').hidden = false
+            document.getElementById(categoria).hidden = true
+
+        }   
+}
+
 var VerificarLogin = () =>{
     let nome = $('#nome-cadastro-input').val();
     let email = $('#email-cadastro-input').val();

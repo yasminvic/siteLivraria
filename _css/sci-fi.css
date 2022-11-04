@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body{
+    overflow-x: hidden;
+}
+
+#destaque img{
+    height: 40em;
+}
+
+
+main section#categorias li:hover{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+main section#categorias img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgba(52, 58, 64, .7);
+    box-shadow: 4px 2px 8px #a1a1a1;
+}
+
+main section#categorias figcaption{
+    text-align: center;
+}
+
+main section#conteudo{
+    border: 1px solid #111;
+    padding: 2em;
+    width: 70vw;
+    background-color: #f0e8e8;
+}
+
+main section#conteudo h2{
+    margin-top: 1em;
+    background-color: rgba(52, 58, 64, .7);
+}
+
+main section#conteudo .item-card:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+footer{
+    width: 100%;
+    background-color: #6b737a;
+}
+
+
+footer img{
+    width: 32px;
+    height: 32px;
+}
