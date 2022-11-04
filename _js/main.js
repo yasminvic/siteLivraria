@@ -4,8 +4,36 @@ $(document).ready(() => {
 
   // Index
   $("#index-btn-login").click((e) => {
+    $("#destaque").hide();
+    getPagina("_html/login.html", "main");
+  });
+
+  //Pagina Resenhas
+  $("#btn-resenha").click((e) => {
+    $("#destaque").hide();
+    getPagina("_html/resenha.html", "main");
+  });
+
+  //Pagina About Us
+  $("#btn-about").click((e) => {
+    $("#destaque").hide();
+    getPagina("_html/about.html", "main");
+  });
+
+  // Pagina Terror
+  $("#terror-btn").click((e) => {
+    $("#destaque").hide();
+    getPagina("_html/terror.html", "main");
+  });
+
+  $("#btn-romance").click((e) => {
     $('#destaque').hide();
-    getPagina("_html/login.html", 'main');
+    getPagina("_html/romance.html", 'main');
+  });
+
+  $("#btn-culinaria").click((e) => {
+    $('#destaque').hide();
+    getPagina("_html/culinaria.html", 'main');
   });
 
   // Modal
@@ -76,11 +104,13 @@ $(document).ready(() => {
           // window.location.href = ""  
         }
       });
+
+      lista_usuarios.push(user);
+      setJsonItem(LISTA_USUARIOS, lista_usuarios);
     }
   });
 
 });
-
 
 //FUNCTIONS
 var getPagina = (page, target) => {
@@ -106,11 +136,46 @@ var VerificarLogin = () => {
 };
 
 var VerificaEmail = (email) => {
-  let regexEmail = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi;
+  let regexEmail =
+    /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi;
 
   if (regexEmail.test(email)) {
     return true;
   } else {
     return false;
   }
+};
+
+//FUNCTIONS
+var getPagina = (page, target) => {
+  $.ajax({
+    url: page,
+    datatype: 'html',
+    success: (data) => {
+      $(target).html(data);
+    }
+  })
+};
+
+
+var VerificarLogin = () => {
+  let nome = $('#nome-cadastro-input').val();
+  let email = $('#email-cadastro-input').val();
+  let senha = $('#senha-cadastro-input').val();
+
+  if (email == "" || senha == "" || nome == "") {
+    return false;
+  } else {
+    return VerificaEmail(email);
+  }
+};
+
+var VerificaEmail = (email) => {
+  let regexEmail = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/gi;
+  if (regexEmail.test(email)) {
+    return true;
+  } else {
+    return false;
+  }
 }
+
