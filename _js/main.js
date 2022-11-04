@@ -25,6 +25,18 @@ $(document).ready(() => {
     getPagina("_html/terror.html", "main");
   });
 
+  //Pagina Romance
+  $("#btn-romance").click((e) => {
+    $("#destaque").hide();
+    getPagina("_html/romance.html", "main");
+  });
+
+  //Pagina Romance
+  $("#btn-culinaria").click((e) => {
+    $("#destaque").hide();
+    getPagina("_html/culinaria.html", "main");
+  });
+
   // Modal
   $(".btn-login").click((e) => {
     $("#modal-login").modal("toggle"); //abre modal login
@@ -56,33 +68,6 @@ $(document).ready(() => {
       let email = $("#email-cadastro-input").val();
 
       user = new Usuario(idInsert, nome, senha, email);
-
-    $("#btn-romance").click((e) => {
-        $('#destaque').hide();
-        getPagina("_html/romance.html", 'main');
-    });
-
-    $("#btn-terror").click((e) => {
-        $('#destaque').hide();
-        getPagina("_html/terror.html", 'main');
-    });
-
-    $("#btn-culinaria").click((e) => {
-        $('#destaque').hide();
-        getPagina("_html/culinaria.html", 'main');
-    });
-
-    // Pagina Terror
-    $("#terror-btn").click((e) => {
-        $('#destaque').hide();
-        getPagina("_html/terror.html", 'main');
-    });
-    
-    //Pagina Resenhas
-    $("#btn-resenha").click((e) => {
-        $('#destaque').hide();
-        getPagina("_html/resenha.html", 'main');
-    });
 
     // Modal
     $(".btn-login").click((e) => {
