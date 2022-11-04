@@ -6,6 +6,13 @@ $(document).ready(() => {
     $("#index-btn-login").click((e) => {
         $('#destaque').hide();
         getPagina("_html/login.html", 'main');
+
+        
+    });
+    
+    $("#index-btn-login").click((e) => {
+        $('#destaque').hide();
+        getPagina("_html/login.html", 'main');
     });
 
     // Modal
