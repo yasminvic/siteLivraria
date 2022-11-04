@@ -8,7 +8,8 @@ $(document).ready(() => {
         getPagina("_html/login.html", 'main');
     });
 
-<<<<<<< HEAD
+
+    
     $("#btn-romance").click((e) => {
         $('#destaque').hide();
         getPagina("_html/romance.html", 'main');
@@ -24,7 +25,6 @@ $(document).ready(() => {
         getPagina("_html/culinaria.html", 'main');
     });
 
-=======
 
     // Pagina Terror
     $("#terror-btn").click((e) => {
@@ -32,7 +32,8 @@ $(document).ready(() => {
         getPagina("_html/terror.html", 'main');
     });
     
->>>>>>> b4d837ed3ba3a9195b1930b49fe58214b57de353
+
+    
     //Pagina Resenhas
     $("#btn-resenha").click((e) => {
         $('#destaque').hide();
@@ -44,13 +45,8 @@ $(document).ready(() => {
         $("#modal-login").modal("toggle"); // Abre modal login
     });
 
-<<<<<<< HEAD
-
-
     $('.btn-cadastro').click((e)=>{
-=======
     $('.btn-cadastro').click((e) => {
->>>>>>> b4d837ed3ba3a9195b1930b49fe58214b57de353
         $('#modal-cadastro').modal("toggle");
     });
 
